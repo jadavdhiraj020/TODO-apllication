@@ -1,0 +1,22 @@
+{% extends 'tasks/base.html' %}
+
+{% block title %}Category List{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Categories</h2>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            {% for category in categories %}
+                <li class="list-group-item">
+                    <a href="{% url 'tasks_by_category' category.pk %}">{{ category.name }}</a>  <!-- Link to tasks by category -->
+                </li>
+            {% empty %}
+                <li class="list-group-item">No categories found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

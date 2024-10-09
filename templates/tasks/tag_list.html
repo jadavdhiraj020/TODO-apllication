@@ -1,0 +1,22 @@
+{% extends 'tasks/base.html' %}
+
+{% block title %}Tag List{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Tags</h2>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            {% for tag in tags %}
+                <li class="list-group-item">
+                    <a href="{% url 'tasks_by_tag' tag.pk %}">{{ tag.name }}</a>  <!-- Link to tasks by tag -->
+                </li>
+            {% empty %}
+                <li class="list-group-item">No tags found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
