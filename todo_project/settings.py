@@ -32,13 +32,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'y7-eky0mi#2ngn-4#a+4^hwucy($lolf8+3_&a08iq3j!)fzjc'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://todo-apllication.onrender.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
