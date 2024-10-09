@@ -36,7 +36,7 @@ SECRET_KEY = 'y7-eky0mi#2ngn-4#a+4^hwucy($lolf8+3_&a08iq3j!)fzjc'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://todo-apllication.onrender.com']
 
